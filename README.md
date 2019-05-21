@@ -1,4 +1,4 @@
-# Lighthouse21DayChallenge
+# Lighthouse 21 Day Challenge
 
 Completed on May 21, 2019.
 
