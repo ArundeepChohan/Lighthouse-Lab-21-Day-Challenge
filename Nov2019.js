@@ -678,4 +678,40 @@
 	const totalVolume = function (solids) {
 		return solids.reduce((acc, solid) => acc + getVolume(solid), 0);
 	};
+	/*
+	Input:
+		const bakeryA = ['saffron', 'eggs', 'tomato paste', 'coconut', 'custard']
+		const bakeryB = ['milk', 'butter', 'cream cheese']
+		const recipes = [
+			{
+				name: 'Coconut Sponge Cake',
+				ingredients: ['coconut', 'cake base']
+			},
+			{
+				name: 'Persian Cheesecake',
+				ingredients: ['saffron', 'cream cheese']
+			},
+			{
+				name: 'Custard Surprise',
+				ingredients: ['custard', 'ground beef']
+			}
+			]
+	Output:
+		Persian Cheesecake
+	*/
+	const chooseRecipe = function(bakeryA, bakeryB, recipes) {
+		for(var recipe of recipes)
+		{
+		  //console.log(recipe.ingredients);
+		  if(bakeryA.includes(recipe.ingredients[0])&&bakeryB.includes(recipe.ingredients[1]))
+		  {
+		    return recipe.name;
+		  }
+		  else if(bakeryA.includes(recipe.ingredients[1])&&bakeryB.includes(recipe.ingredients[0]))
+		  {
+		    return recipe.name;
+		  }
+		}
+		return null;
+	};
 
