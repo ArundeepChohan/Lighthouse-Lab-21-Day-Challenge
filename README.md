@@ -20,6 +20,6 @@ Prerequisites: Able to run Javascript files.
 
 Installing: Download .js and run. 
 
-Built With: Javascript
+Built With: Javascript(ES6)
 
 Authors: Arundeep Chohan
